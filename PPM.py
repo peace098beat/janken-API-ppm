@@ -135,10 +135,13 @@ class Predict(object):
         # 手の中からランダムに選ぶ
         # np
         # next_hand = next_hands[int(np.floor(np.random.rand() * len(next_hands)))]
+
         # std
         inx = int(math.floor(random.random() * len(next_hands)))
-        next_hand = next_hands[inx]
-        return next_hand
+        # next_hand = next_hands[inx]
+
+        # return next_hand
+        return next_hands[inx]
 
 
 if __name__ == '__main__':
