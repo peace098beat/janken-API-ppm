@@ -60,8 +60,7 @@ class Predict(object):
                     self.accum[s] = 1
 
     def add_ary(self, ary):
-        for c in ary:
-            self.add(c)
+        [self.add(c) for c in ary]
 
     def predict(self):
         """予測した手を返す
